@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Funções - Tabuada</h1>
+    <button onclick="mostrarTabuada()">Mostrar Tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+    <div id="output"></div>
+
+    <script>
+         const output = document.getElementById("output")
+        function mostrarTabuada(){
+        let msg = " "
+         let numero = prompt("Digite o número")
+            numero = parseFloat(numero)
+         for(let i=0;i <=1000;i++){
+            msg +=  numero + " X " + i + "=" + numero * i + "<br />";
+        }
+        output.innerHTML = msg  
+    }
+    function limparTabuada(){
+        output.innerHTML = ""
+    }
+    </script>
+</body>
+</html>
